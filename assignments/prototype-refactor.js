@@ -12,7 +12,7 @@ Prototype Refactor
       constructor(attributes){
         this.createdAt = attributes.createdAt,
         this.name = attributes.name,
-        this.dimension = attributes.dimension
+        this.dimensions = attributes.dimensions
       }
       destroy(){
         return `${this.name} was removed from the game.`
