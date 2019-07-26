@@ -15,7 +15,7 @@ Prototype Refactor
         this.newDimension = attributes.dimension
       }
       speak(){
-        console.log(`${this.name} was removed from the game.`); 
+        console.log(`${this.newName} was removed from the game.`); 
       }
   }
 
@@ -25,7 +25,7 @@ Prototype Refactor
             this.newHealthPoints = CharacterStatsAttributes.healthPoints;
         }
         takekDamage(){
-            console.log(`${this.name} was removed from the game.`);
+            console.log(`${this.newName} was removed from the game.`);
         }
     }  
 
@@ -37,7 +37,7 @@ Prototype Refactor
             this.newLanguage = humanoidAttributes.language;
         }
         greet(){
-            console.log(`${this.name} offers a greeting in ${this.language}.`);
+            console.log(`${this.newName} offers a greeting in ${this.newLanguage}.`);
         }
     }
 
