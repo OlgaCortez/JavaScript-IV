@@ -164,3 +164,6 @@ const john = new ProjectManager({
 });
 
 
+console.log(jeffree.name, jeffree.location);
+console.log(john.name, john.catchPhrase);
+console.log(elise.name, elise.favLanguage);
