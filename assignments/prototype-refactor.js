@@ -10,34 +10,34 @@ Prototype Refactor
 
   class GameObject {
       constructor(attributes){
-        this.newCreatedAt = attributes.createdAt,
-        this.newName = attributes.name,
-        this.newDimension = attributes.dimension
+        this.createdAt = attributes.createdAt,
+        this.name = attributes.name,
+        this.dimension = attributes.dimension
       }
-      speak(){
-        console.log(`${this.newName} was removed from the game.`); 
+      destroy(){
+        return `${this.name} was removed from the game.`
       }
   }
 
     class CharacterStats extends GameObject{
         constructor(CharacterStatsAttributes){
             super(CharacterStatsAttributes);
-            this.newHealthPoints = CharacterStatsAttributes.healthPoints;
+            this.healthPoints = CharacterStatsAttributes.healthPoints;
         }
-        takekDamage(){
-            console.log(`${this.newName} was removed from the game.`);
+        takeDamage(){
+            return `${this.name} was removed from the game.`
         }
     }  
 
     class Humanoid extends CharacterStats{
         constructor(humanoidAttributes){
             super(humanoidAttributes);
-            this.newTeam = humanoidAttributes.team;
-            this.newWeapons = humanoidAttributes.weapons;
-            this.newLanguage = humanoidAttributes.language;
+            this.team = humanoidAttributes.team;
+            this.weapons = humanoidAttributes.weapons;
+            this.language = humanoidAttributes.language;
         }
         greet(){
-            console.log(`${this.newName} offers a greeting in ${this.newLanguage}.`);
+            return `${this.name} offers a greeting in ${this.language}.`
         }
     }
 
